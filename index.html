@@ -21,14 +21,47 @@
 				width:auto
 			}
 		}
-		.carousel-inner img {
-			width:100%;
+		#slider .bx-wrapper {
+			margin-bottom:20px;
+			background-color:#f8f8f8;
+		}
+		#hot .bx-wrapper{
+			margin-bottom:0px;
+			border:0;
+			background-color:#f8f8f8;
+			box-shadow:0 0 0px
+		}
+		#hot .bx-wrapper img{
+			/*border:0.5px #f8f8f8 solid;*/
+			height:230px;
+			margin:0 auto;
+		}
+		#hot .bx-wrapper li{
+			width:100%!important
+		}
+		#hot>.row>div{
+			padding-left:15px;
+			padding-right:15px;
+		}
+		a.title{
+			display:block;
+			padding:0.5em 1em;
+			background-color:#f8f8f8;
+			color:#777;
+		}
+		a.title:hover{
+			color:#333;
+			text-decoration:none;
+		}
+		.hot_box{
+			border:5px solid #fff;
+			border-collapse:collapse;
 		}
 	</style>
 </head>
 <body>
 <!-- Nav Bar -->
-<div class="container">
+<div id="navbar" class="container">
 	<nav class="navbar navbar-default">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -73,112 +106,92 @@
     </div>
 	</nav>
 </div>
-
-<div class="container">
+<!-- Pic Slider -->
+<div id="slider" class="container">
 	<ul class="bxslider">
-	  <li><img src="assets/images/ice_cream_maker.jpg" /></li>
-	  <li><img src="assets/images/wine_cooler.jpg" /></li>
-	  <li><img src="assets/images/bar_fridge.jpg" /></li>
+	  <li>
+		<a target="view_window" href="https://detail.tmall.com/item.htm?spm=a1z10.1-b-s.w5003-15983825574.4.54e3c0f6n8OXfx&id=45249527511&rn=cdfcc94d7a7af95c55328388fecbeb95&abbucket=13&scene=taobao_shop">
+			<img src="assets/images/ice_cream_maker.jpg" title="Ice Cream Maker" />
+		</a>
+	  </li>
+	  <li>
+		<a target="view_window" href="https://detail.tmall.com/item.htm?spm=a1z10.1-b-s.w5003-15983825574.11.54e3c0f6n8OXfx&id=18160942149&rn=cdfcc94d7a7af95c55328388fecbeb95&abbucket=13&scene=taobao_shop&skuId=55934606569">
+			<img src="assets/images/wine_cooler.jpg" title="Wine Cooler" />
+		</a>
+	  </li>
+	  <li>
+		<a target="view_window" href="https://detail.tmall.com/item.htm?spm=a1z10.1-b-s.w5003-15983825574.7.54e3c0f6n8OXfx&id=37453543350&rn=cdfcc94d7a7af95c55328388fecbeb95&abbucket=13&scene=taobao_shop">
+			<img src="assets/images/bar_fridge.jpg" title="Bar Fridge" />
+		</a>
+	  </li>
 	</ul>
 </div>
-
-
-<div class="container">
-    <div class="bx-wrapper" style="max-width: 1170px; margin: 0px auto;">
-		<div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 310px;">
-			<ul class="bxslider" style="width: 415%; position: relative; transition-duration: 0s; transform: translate3d(-760px, 0px, 0px);">
-				<li style="float: left; list-style: none; position: relative; width: 720px;" class="bx-clone">
-					<a href="/"><img src="http://www.tsingy.cn/wp-content/uploads/2016/12/slide2.jpg" alt="北京清源恒泰环保科技有限公司" title="北京清源恒泰环保科技有限公司"></a>
-					<div class="bx-caption"><span>北京清源恒泰环保科技有限公司</span></div>
-				</li>
-				<li style="float: left; list-style: none; position: relative; width: 720px;">
-					<a href="/"><img src="http://www.tsingy.cn/wp-content/uploads/2016/12/slide1.jpg" alt="北京清源恒泰环保科技有限公司" title="北京清源恒泰环保科技有限公司"></a>
-					<div class="bx-caption"><span>北京清源恒泰环保科技有限公司</span></div>
-				</li>
-				<li style="float: left; list-style: none; position: relative; width: 720px;">
-					<a href="/"><img src="http://www.tsingy.cn/wp-content/uploads/2016/12/slide2.jpg" alt="北京清源恒泰环保科技有限公司" title="北京清源恒泰环保科技有限公司"></a>
-					<div class="bx-caption"><span>北京清源恒泰环保科技有限公司</span></div>
-				</li>
-				<li style="float: left; list-style: none; position: relative; width: 720px;" class="bx-clone">
-					<a href="/"><img src="http://www.tsingy.cn/wp-content/uploads/2016/12/slide1.jpg" alt="北京清源恒泰环保科技有限公司" title="北京清源恒泰环保科技有限公司"></a>
-					<div class="bx-caption"><span>北京清源恒泰环保科技有限公司</span></div>
-				</li>
-			</ul>
+<!-- Hot Sell -->
+<div id="hot" class="container">
+	<div class="row">
+	  <div class="col-md-4">
+		<div class="hot_box">
+		<a href = "#" class="title">Ice Cream Maker</a>
+		<ul class="bxslider">
+		  <li>
+			<a target="view_window" href="#">
+				<img src="assets/images/i3.jpg" />
+				<a href = "#" class="title">Model A6</a>
+			</a>
+		  </li>
+		  <li>
+			<a target="view_window" href="#">
+				<img src="assets/images/i2.jpg" />
+				<a href = "#" class="title">Model X2</a>
+			</a>
+		  </li>
+		</ul>
 		</div>
-		<div class="bx-controls bx-has-controls-direction"><div class="bx-controls-direction"><a class="bx-prev" href="">Prev</a><a class="bx-next" href="">Next</a></div></div>
+	  </div>
+	  <div class="col-md-4">
+		<div class="hot_box">
+		<a href = "#" class="title">Wine Cooler</a>
+		<ul class="bxslider">
+		  <li>
+			<a target="view_window" href="#">
+				<img src="assets/images/c2.jpg" />
+				<a href = "#" class="title">Model D9</a>
+			</a>
+		  </li>
+		  <li>
+			<a target="view_window" href="#">
+				<img src="assets/images/c3.jpg" />
+				<a href = "#" class="title">Model O8</a>
+			</a>
+		  </li>
+		</ul>
+	  </div>
+	  </div>
+	  <div class="col-md-4">
+		<div class="hot_box">
+		<a href = "#" class="title">Bar Fridge</a>
+		<ul class="bxslider">
+		  <li>
+			<a target="view_window" href="#">
+				<img src="assets/images/b2.jpg" />
+				<a href = "#" class="title">Model Y8</a>
+			</a>
+		  </li>
+		  <li>
+			<a target="view_window" href="#">
+				<img src="assets/images/b3.jpg" />
+				<a href = "#" class="title">Model A3</a>
+			</a>
+		  </li>
+		</ul>
+		</div>
+	  </div>
 	</div>
 </div>
-
+<!-- Footer -->
 <div class="container">
-	<div class="bx-wrapper" style="max-width: 100%;">
-		<div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 145px;">
-			<ul class="bxslider" style="width: auto; position: relative;">
-  			<li style="float: none; list-style: none; position: absolute; width: 574px; z-index: 50; display: block;">
-				<img src="assets/images/ice_cream_maker.jpg" title="J15起飞">
-				<div class="bx-caption"><span>J15起飞</span></div>
-			</li>
-  			<li style="float: none; list-style: none; position: absolute; width: 574px; z-index: 0; display: none;">
-				<img src="assets/images/wine_cooler.jpg" title="美女">
-				<div class="bx-caption"><span>美女</span></div>
-			</li>
-  			<li style="float: none; list-style: none; position: absolute; width: 574px; z-index: 0; display: none;">
-				<img src="assets/images/bar_fridge.jpg" title="静谧的农场">
-				<div class="bx-caption"><span>静谧的农场</span></div>
-			</li>
-			</ul>
-		</div>
-		<div class="bx-controls bx-has-pager bx-has-controls-direction">
-			<div class="bx-pager bx-default-pager">
-				<div class="bx-pager-item"><a href="" data-slide-index="0" class="bx-pager-link active">1</a></div>
-				<div class="bx-pager-item"><a href="" data-slide-index="1" class="bx-pager-link">2</a></div>
-				<div class="bx-pager-item"><a href="" data-slide-index="2" class="bx-pager-link">3</a></div>
-			</div>
-			<div class="bx-controls-direction"><a class="bx-prev" href="">Prev</a><a class="bx-next" href="">Next</a></div>
-		</div>
-	</div>
+	
 </div>
-
-<!-- Carousel -->
-<div class="container">
-	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carousel-example-generic" data-slide-to="0" class=""></li>
-        <li data-target="#carousel-example-generic" data-slide-to="1" class="active"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
-      </ol>
-      <div class="carousel-inner" role="listbox">
-        <div class="item">
-		 <a target="view_window" href="https://detail.tmall.com/item.htm?spm=a1z10.1-b-s.w5003-15983825574.4.54e3c0f6n8OXfx&id=45249527511&rn=cdfcc94d7a7af95c55328388fecbeb95&abbucket=13&scene=taobao_shop">
-          <img src="assets/images/ice_cream_maker.jpg">
-		 </a>
-        </div>
-        <div class="item active">
-		 <a target="view_window" href="https://detail.tmall.com/item.htm?spm=a1z10.1-b-s.w5003-15983825574.7.54e3c0f6n8OXfx&id=37453543350&rn=cdfcc94d7a7af95c55328388fecbeb95&abbucket=13&scene=taobao_shop">
-          <img src="assets/images/wine_cooler.jpg">
-		 </a>
-        </div>
-        <div class="item">
-		 <a target="view_window" href="https://detail.tmall.com/item.htm?spm=a1z10.1-b-s.w5003-15983825574.11.54e3c0f6n8OXfx&id=18160942149&rn=cdfcc94d7a7af95c55328388fecbeb95&abbucket=13&scene=taobao_shop&skuId=55934606569">
-          <img src="assets/images/bar_fridge.jpg">
-		 </a>
-		  <div class="container">
-            <div class="carousel-caption">
-			</div>
-		  </div>
-        </div>
-      </div>
-      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-</div>
-
-
 
 <script type="text/javascript">
 	$(function(){
@@ -186,7 +199,11 @@
 		  e.preventDefault();
 		  $(this).tab('show')
 		});
-		$('.bxslider').bxSlider();
+		$('.bxslider').bxSlider({
+			mode: 'fade',
+			captions: true,
+			pager: false
+		});
 	});
 </script>
 </body>
