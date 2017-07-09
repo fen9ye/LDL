@@ -20,6 +20,7 @@
 			.input-group-btn{
 				width:auto
 			}
+
 		}
 		@media (max-width:768px){
 			.navbar-form {
@@ -28,7 +29,7 @@
 			#sidebar{
 				display:none;
 			}
-		}		
+		}
 		#slider .bx-wrapper {
 			margin-bottom:20px;
 			background-color:#f8f8f8;
@@ -66,8 +67,26 @@
 			border-collapse:collapse;
 			margin-bottom:20px;
 		}
-		#sidebar a.title{
-			background-color:#f8f8f8;
+		#sidebar{
+			padding-right:0px;
+		}
+		#sidebar .contact-item-left{
+			width:33%;
+			float:left;
+		}
+		.panel-body{
+			background-color:#f5f5f5;
+			border-radius:4px;
+		}
+		#contents{
+			padding-left:0px;
+			padding-right:0px;
+		}
+		#contents .panel-body>.btn-group {
+			position:absolute;
+			right:9px;
+			top:9px;
+			float:right;
 		}
 	</style>
 </head>
@@ -118,86 +137,76 @@
     </div>
 	</nav>
 </div>
-<!-- Pic Slider -->
-<div id="slider" class="container">
-	<ul class="bxslider">
-	  <li>
-		<a target="view_window" href="https://detail.tmall.com/item.htm?spm=a1z10.1-b-s.w5003-15983825574.4.54e3c0f6n8OXfx&id=45249527511&rn=cdfcc94d7a7af95c55328388fecbeb95&abbucket=13&scene=taobao_shop">
-			<img src="assets/images/ice_cream_maker.jpg" title="Ice Cream Maker" />
-		</a>
-	  </li>
-	  <li>
-		<a target="view_window" href="https://detail.tmall.com/item.htm?spm=a1z10.1-b-s.w5003-15983825574.11.54e3c0f6n8OXfx&id=18160942149&rn=cdfcc94d7a7af95c55328388fecbeb95&abbucket=13&scene=taobao_shop&skuId=55934606569">
-			<img src="assets/images/wine_cooler.jpg" title="Wine Cooler" />
-		</a>
-	  </li>
-	  <li>
-		<a target="view_window" href="https://detail.tmall.com/item.htm?spm=a1z10.1-b-s.w5003-15983825574.7.54e3c0f6n8OXfx&id=37453543350&rn=cdfcc94d7a7af95c55328388fecbeb95&abbucket=13&scene=taobao_shop">
-			<img src="assets/images/bar_fridge.jpg" title="Bar Fridge" />
-		</a>
-	  </li>
-	</ul>
+
+<!-- Breadcrumbs -->
+<div class="container">
+	<ol class="breadcrumb">
+	  <li><a href="#">Home</a></li>
+	  <li><a href="#">Category</a></li>
+	  <li class="active">Ice Cream Maker</li>
+	</ol>
 </div>
-<!-- Hot Sell -->
-<div id="hot" class="container">
-	<div class="row">
-	  <div class="col-md-4">
-		<div class="hot_box">
-		<a href = "#" class="title">Ice Cream Maker</a>
-		<ul class="bxslider">
-		  <li>
-			<a target="view_window" href="#">
-				<img src="assets/images/i3.jpg" />
-				<a href = "#" class="title">Model A6</a>
-			</a>
-		  </li>
-		  <li>
-			<a target="view_window" href="#">
-				<img src="assets/images/i2.jpg" />
-				<a href = "#" class="title">Model X2</a>
-			</a>
-		  </li>
-		</ul>
+
+<div class="container">
+	<div class="rows">
+	<div id="contents" class="col-md-9">
+		<div class="panel panel-default">
+		  <div class="panel-body">
+			Ice Cream Maker
+			<div class="btn-group" role="group" aria-label="...">
+				<button type="button" class="btn btn-default">
+					<span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+				</button>
+				<button type="button" class="btn btn-default">
+					<span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
+				</button>
+			</div>
+		  </div>
+		  <ul class="list-group">
+				<li class="list-group-item">
+					
+				</li>
+				<li class="list-group-item">
+					
+				</li>
+				<li class="list-group-item">
+					
+				</li>
+			</ul>
 		</div>
-	  </div>
-	  <div class="col-md-4">
-		<div class="hot_box">
-		<a href = "#" class="title">Wine Cooler</a>
-		<ul class="bxslider">
-		  <li>
-			<a target="view_window" href="#">
-				<img src="assets/images/c2.jpg" />
-				<a href = "#" class="title">Model D9</a>
-			</a>
-		  </li>
-		  <li>
-			<a target="view_window" href="#">
-				<img src="assets/images/c3.jpg" />
-				<a href = "#" class="title">Model O8</a>
-			</a>
-		  </li>
-		</ul>
-	  </div>
-	  </div>
-	  <div class="col-md-4">
-		<div class="hot_box">
-		<a href = "#" class="title">Bar Fridge</a>
-		<ul class="bxslider">
-		  <li>
-			<a target="view_window" href="#">
-				<img src="assets/images/b2.jpg" />
-				<a href = "#" class="title">Model Y8</a>
-			</a>
-		  </li>
-		  <li>
-			<a target="view_window" href="#">
-				<img src="assets/images/b3.jpg" />
-				<a href = "#" class="title">Model A3</a>
-			</a>
-		  </li>
-		</ul>
+	</div>
+	<div class="col-md-3" id="sidebar">
+		<div class="panel panel-default">
+		  <div class="panel-body">
+			Category
+		  </div>
+			<div class="list-group">
+				<a href="#" class="list-group-item active">&nbsp;&nbsp;&nbsp;&nbsp;Ice Cream Maker</a>
+				<a href="#" class="list-group-item">&nbsp;&nbsp;&nbsp;&nbsp;Wine Cooler</a>
+				<a href="#" class="list-group-item">&nbsp;&nbsp;&nbsp;&nbsp;Bar Fridge</a>
+			</div>
 		</div>
-	  </div>
+	
+		<div class="panel panel-default">
+		  <div class="panel-body">
+			Contact Us
+		  </div>
+			<ul class="list-group">
+				<li class="list-group-item">
+					<div class="contact-item-left">Email:</div>
+					<div>liumeiling@ldl-fu.com</div>
+				</li>
+				<li class="list-group-item">
+					<div class="contact-item-left">Tel:</div>
+					<div>(0086)13709600075</div>
+				</li>
+				<li class="list-group-item">
+					<div class="contact-item-left">Contacts:</div>
+					<div>Miss Liu</div>
+				</li>
+			</ul>
+		</div>
+	</div>
 	</div>
 </div>
 <!-- Footer -->
@@ -210,11 +219,6 @@
 		$('nav ul>li>a').click(function (e) {
 		  e.preventDefault();
 		  $(this).tab('show')
-		});
-		$('.bxslider').bxSlider({
-			mode: 'fade',
-			captions: true,
-			pager: false
 		});
 	});
 </script>
