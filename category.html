@@ -15,19 +15,35 @@
 			padding-top:10px;
 			padding-bottom:10px;
 			background-color:#eee;
+			font-family:"Microsoft Yahei","Helvetica Neue","sans serif"
 		}
 		@media (min-width: 768px) { 
 			.input-group-btn{
 				width:auto
 			}
-
+			#contents .content-right{
+				padding-left:30px;
+			}
 		}
 		@media (max-width:768px){
+			.navbar{
+				margin-bottom:0px;
+			}
 			.navbar-form {
 				margin-bottom:0px;
 			}
 			#sidebar{
 				display:none;
+			}
+			#contents .content-right{
+				padding-left:0px;
+				padding-right:0px;
+			}
+			#contents .panel-body>.btn-group {
+				display:none;
+			}
+			.breadcrumb{
+				margin-bottom:0px;
 			}
 		}
 		#slider .bx-wrapper {
@@ -87,6 +103,15 @@
 			right:9px;
 			top:9px;
 			float:right;
+		}
+		#contents .content-left{
+			padding-left:0px;
+			padding-right:0px;
+		}
+		#contents .content-left img{
+			/*max-width:100%;*/
+			width:100%;
+			max-height:200px;
 		}
 	</style>
 </head>
@@ -157,20 +182,47 @@
 				<button type="button" class="btn btn-default">
 					<span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
 				</button>
-				<button type="button" class="btn btn-default">
+				<button type="button" class="btn btn-default active">
 					<span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
 				</button>
 			</div>
 		  </div>
 		  <ul class="list-group">
 				<li class="list-group-item">
-					
+					<div class="rows">
+						<div class="col-md-4 content-left">
+							<a href="#"><img src="assets/images/i3.jpg"/></a>
+						</div>
+						<div class="col-md-8 content-right">
+							<a href="#"><h3>Ice Cream Maker Model T3</h3></a>
+							<p>Ice Cream Maker is the best...</p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
 				</li>
 				<li class="list-group-item">
-					
+					<div class="rows">
+						<div class="col-md-4 content-left">
+							<a href="#"><img src="assets/images/i2.jpg"/></a>
+						</div>
+						<div class="col-md-8 content-right">
+							<a href="#"><h3>Ice Cream Maker Model X1</h3></a>
+							<p>This Ice Cream Maker is designed for kid and ...</p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
 				</li>
 				<li class="list-group-item">
-					
+					<div class="rows">
+						<div class="col-md-4 content-left">
+							<a href="#"><img src="assets/images/iceCreamMaker1.webp.jpg"/></a>
+						</div>
+						<div class="col-md-8 content-right">
+							<a href="#"><h3>Ice Cream Maker Model Z10</h3></a>
+							<p>This most powerful Ice Cream Maker in the world</p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
 				</li>
 			</ul>
 		</div>
@@ -219,6 +271,11 @@
 		$('nav ul>li>a').click(function (e) {
 		  e.preventDefault();
 		  $(this).tab('show')
+		});
+		
+		$("#contents .panel-body .btn-group>.btn").click(function(){
+			$("#contents .panel-body .btn-group>.btn").removeClass("active");
+			$(this).addClass("active");
 		});
 	});
 </script>
