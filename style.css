@@ -1,0 +1,122 @@
+/*common*/
+body{
+	padding-top:10px;
+	padding-bottom:10px;
+	background-color:#eee;
+	font-family:"Microsoft Yahei","Helvetica Neue","sans serif"
+
+}
+@media (min-width: 768px) { 
+	.input-group-btn{
+		width:auto
+	}
+	#contents .content-right{
+		padding-left:30px;
+	}
+}
+@media (max-width:768px){
+	.navbar{
+		margin-bottom:0px;
+	}
+	.navbar-form {
+		margin-bottom:0px;
+	}
+	#sidebar{
+		display:none;
+	}
+	#contents .content-right{
+		padding-left:0px;
+		padding-right:0px;
+	}
+	#contents .panel-body>.btn-group {
+		display:none;
+	}
+	.breadcrumb{
+		margin-bottom:0px;
+	}
+}
+/*index*/	
+#slider .bx-wrapper {
+	margin-bottom:20px;
+	background-color:#f8f8f8;
+}
+#hot .bx-wrapper{
+	margin-bottom:0px;
+	border:0;
+	background-color:#f8f8f8;
+	box-shadow:0 0 0px
+}
+#hot .bx-wrapper img{
+	/*border:0.5px #f8f8f8 solid;*/
+	max-height:230px;
+	width:100%;
+}
+#hot .bx-wrapper li{
+	width:100%!important
+}
+#hot>.row>div{
+	padding-left:15px;
+	padding-right:15px;
+}
+#hot a.title{
+	display:block;
+	padding:0.5em 1em;
+	background-color:#f8f8f8;
+	color:#777;
+}
+#hot a.title:hover{
+	color:#333;
+	text-decoration:none;
+}
+#hot .hot_box{
+	border:5px solid #fff;
+	border-collapse:collapse;
+	margin-bottom:20px;
+}
+/*other like category single*/
+#sidebar{
+	padding-right:0px;
+}
+#sidebar .contact-item-left{
+	width:33%;
+	float:left;
+}
+.panel-body{
+	background-color:#f5f5f5;
+	border-radius:4px;
+}
+#contents{
+	padding-left:0px;
+	padding-right:0px;
+}
+#contents .panel-body>.btn-group {
+	position:absolute;
+	right:9px;
+	top:9px;
+	float:right;
+}
+#contents .content-left{
+	padding-left:0px;
+	padding-right:0px;
+}
+#contents img{
+	/*max-width:100%;*/
+	width:100%;
+	max-height:200px;
+}
+#contents .panel>.list-group:last-child .list-group-item:last-child {
+	border:0px;
+}
+#contents .content-right p{
+	max-height:100px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+#contents .panel-footer .row{
+	margin-bottom:10px;
+}
+#contents .panel-footer p{
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}

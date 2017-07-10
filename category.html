@@ -7,121 +7,11 @@
 	<title>LDL-Fu</title>
 	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
 	<link href="assets/css/jquery.bxslider.min.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
 	<script src="assets/js/jquery-1.8.3.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
 	<script src="assets/js/jquery.bxslider.min.js"></script>
-	<style>
-		body{
-			padding-top:10px;
-			padding-bottom:10px;
-			background-color:#eee;
-			font-family:"Microsoft Yahei","Helvetica Neue","sans serif"
-		}
-		@media (min-width: 768px) { 
-			.input-group-btn{
-				width:auto
-			}
-			#contents .content-right{
-				padding-left:30px;
-			}
-		}
-		@media (max-width:768px){
-			.navbar{
-				margin-bottom:0px;
-			}
-			.navbar-form {
-				margin-bottom:0px;
-			}
-			#sidebar{
-				display:none;
-			}
-			#contents .content-right{
-				padding-left:0px;
-				padding-right:0px;
-			}
-			#contents .panel-body>.btn-group {
-				display:none;
-			}
-			.breadcrumb{
-				margin-bottom:0px;
-			}
-		}
-		#slider .bx-wrapper {
-			margin-bottom:20px;
-			background-color:#f8f8f8;
-		}
-		#hot .bx-wrapper{
-			margin-bottom:0px;
-			border:0;
-			background-color:#f8f8f8;
-			box-shadow:0 0 0px
-		}
-		#hot .bx-wrapper img{
-			/*border:0.5px #f8f8f8 solid;*/
-			height:230px;
-			margin:0 auto;
-		}
-		#hot .bx-wrapper li{
-			width:100%!important
-		}
-		#hot>.row>div{
-			padding-left:15px;
-			padding-right:15px;
-		}
-		#hot a.title{
-			display:block;
-			padding:0.5em 1em;
-			background-color:#f8f8f8;
-			color:#777;
-		}
-		#hot a.title:hover{
-			color:#333;
-			text-decoration:none;
-		}
-		#hot .hot_box{
-			border:5px solid #fff;
-			border-collapse:collapse;
-			margin-bottom:20px;
-		}
-		#sidebar{
-			padding-right:0px;
-		}
-		#sidebar .contact-item-left{
-			width:33%;
-			float:left;
-		}
-		.panel-body{
-			background-color:#f5f5f5;
-			border-radius:4px;
-		}
-		#contents{
-			padding-left:0px;
-			padding-right:0px;
-		}
-		#contents .panel-body>.btn-group {
-			position:absolute;
-			right:9px;
-			top:9px;
-			float:right;
-		}
-		#contents .content-left{
-			padding-left:0px;
-			padding-right:0px;
-		}
-		#contents .content-left img{
-			/*max-width:100%;*/
-			width:100%;
-			max-height:200px;
-		}
-		#contents .panel>.list-group:last-child .list-group-item:last-child {
-			border:0px;
-		}
-		#contents .content-right p{
-			max-height:100px;
-			overflow: hidden;
-			text-overflow: ellipsis;
-		}
-	</style>
+
 </head>
 <body>
 <!-- Nav Bar -->
@@ -187,15 +77,15 @@
 		  <div class="panel-body">
 			Ice Cream Maker
 			<div class="btn-group" role="group" aria-label="...">
-				<button type="button" class="btn btn-default">
-					<span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
-				</button>
-				<button type="button" class="btn btn-default active">
+				<button id="list_btn" type="button" class="btn btn-default">
 					<span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
+				</button>
+				<button id="box_btn" type="button" class="btn btn-default active">
+					<span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
 				</button>
 			</div>
 		  </div>
-		  <ul class="list-group">
+		  <ul id="list_content" class="list-group hidden">
 				<li class="list-group-item">
 					<div class="rows">
 						<div class="col-md-4 content-left">
@@ -276,6 +166,96 @@
 					  </ul>
 				</li>
 			</ul>
+		
+			<div id="box-content" class="panel-footer">
+			<div class="row">
+				<div class="col-md-4">
+					<a href="#"><img src="assets/images/i3.jpg"/></a>
+					<a><h5 class="text-center">Ice Cream Maker Model T5</h5></a>
+					<p>The most beatiful Ice Cream Maker...</p>
+				</div>
+				<div class="col-md-4">
+					<a href="#"><img src="assets/images/i2.jpg"/></a>
+					<a href="#"><h5 class="text-center">Ice Cream Maker Model D7</h5></a>
+					<p>The Ice Cream Maker which...</p>
+				</div>
+				<div class="col-md-4">
+					<a href="#"><img src="assets/images/iceCreamMaker1.webp.jpg"/></a>
+					<a href="#"><h5 class="text-center">Ice Cream Maker Model D7</h5></a>
+					<p>The most powerful Ice Cream Maker...</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<a href="#"><img src="assets/images/b3.jpg"/></a>
+					<a><h5 class="text-center">Ice Cream Maker Model K5</h5></a>
+					<p>The Ice Cream Maker...</p>
+				</div>
+				<div class="col-md-4">
+					<a href="#"><img src="assets/images/b2.jpg"/></a>
+					<a href="#"><h5 class="text-center">Ice Cream Maker Model B7</h5></a>
+					<p>The Ice Cream Maker is designed for ...<p>
+				</div>
+				<div class="col-md-4">
+					<a href="#"><img src="assets/images/iceCreamMaker2.webp.jpg"/></a>
+					<a href="#"><h5 class="text-center">Ice Cream Maker Model L7</h5></a>
+					<p>Whatever</p>
+				</div>
+			</div>
+						<div class="row">
+				<div class="col-md-4">
+					<a href="#"><img src="assets/images/i3.jpg"/></a>
+					<a><h5 class="text-center">Ice Cream Maker Model T5</h5></a>
+					<p>The most beatiful Ice Cream Maker...</p>
+				</div>
+				<div class="col-md-4">
+					<a href="#"><img src="assets/images/i2.jpg"/></a>
+					<a href="#"><h5 class="text-center">Ice Cream Maker Model D7</h5></a>
+					<p>The Ice Cream Maker which...</p>
+				</div>
+				<div class="col-md-4">
+					<a href="#"><img src="assets/images/iceCreamMaker1.webp.jpg"/></a>
+					<a href="#"><h5 class="text-center">Ice Cream Maker Model D7</h5></a>
+					<p>The most powerful Ice Cream Maker...</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<a href="#"><img src="assets/images/b3.jpg"/></a>
+					<a><h5 class="text-center">Ice Cream Maker Model K5</h5></a>
+					<p>The Ice Cream Maker...</p>
+				</div>
+				<div class="col-md-4">
+					<a href="#"><img src="assets/images/b2.jpg"/></a>
+					<a href="#"><h5 class="text-center">Ice Cream Maker Model B7</h5></a>
+					<p>The Ice Cream Maker is designed for ...<p>
+				</div>
+				<div class="col-md-4">
+					<a href="#"><img src="assets/images/iceCreamMaker2.webp.jpg"/></a>
+					<a href="#"><h5 class="text-center">Ice Cream Maker Model L7</h5></a>
+					<p>Whatever</p>
+				</div>
+			</div>
+			<div class="text-center">
+					<ul class="pagination">
+						<li>
+						  <a href="#" aria-label="Previous">
+							<span aria-hidden="true">&laquo;</span>
+						  </a>
+						</li>
+						<li class="active"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li>
+						  <a href="#" aria-label="Next">
+							<span aria-hidden="true">&raquo;</span>
+						  </a>
+						</li>
+					  </ul>
+			</div>
+		</div>	
 		</div>
 	</div>
 	<div class="col-md-3" id="sidebar">
@@ -325,8 +305,18 @@
 		});
 		
 		$("#contents .panel-body .btn-group>.btn").click(function(){
-			$("#contents .panel-body .btn-group>.btn").removeClass("active");
+			var id = $(this).attr("id");
 			$(this).addClass("active");
+			if(id=="list_btn"){
+				$("#box_btn").removeClass("active");
+				$("#box_content").addClass("hidden");
+				$("#list_content").removeClass("hidden");
+			}else if(id=="box_btn"){
+				$("#list_btn").removeClass("active");
+				$("#box_content").removeClass("hidden");
+				$("#box_content").removeClass("hidden");
+				$("#list_content").addClass("hidden");
+			}
 		});
 	});
 </script>
