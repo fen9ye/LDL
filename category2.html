@@ -108,18 +108,18 @@
 			padding-left:0px;
 			padding-right:0px;
 		}
-		#contents .content-left img{
+		#contents img{
 			/*max-width:100%;*/
 			width:100%;
 			max-height:200px;
 		}
-		#contents .panel>.list-group:last-child .list-group-item:last-child {
-			border:0px;
+		#contents .panel-footer .row{
+			margin-bottom:10px;
 		}
-		#contents .content-right p{
-			max-height:100px;
+		#contents .panel-footer p{
 			overflow: hidden;
-			text-overflow: ellipsis;
+			text-overflow:ellipsis;
+			white-space: nowrap;
 		}
 	</style>
 </head>
@@ -195,68 +195,76 @@
 				</button>
 			</div>
 		  </div>
-		  <ul class="list-group">
-				<li class="list-group-item">
-					<div class="rows">
-						<div class="col-md-4 content-left">
-							<a href="#"><img src="assets/images/i3.jpg"/></a>
-						</div>
-						<div class="col-md-8 content-right">
-							<a href="#"><h3>Ice Cream Maker Model T3</h3></a>
-							<p>Ice Cream Maker is the best...</p>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-				</li>
-				<li class="list-group-item">
-					<div class="rows">
-						<div class="col-md-4 content-left">
-							<a href="#"><img src="assets/images/i2.jpg"/></a>
-						</div>
-						<div class="col-md-8 content-right">
-							<a href="#"><h3>Ice Cream Maker Model X1</h3></a>
-							<p>This Ice Cream Maker is designed for kid and ...</p>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-				</li>
-				<li class="list-group-item">
-					<div class="rows">
-						<div class="col-md-4 content-left">
-							<a href="#"><img src="assets/images/iceCreamMaker1.webp.jpg"/></a>
-						</div>
-						<div class="col-md-8 content-right">
-							<a href="#"><h3>Ice Cream Maker Model Z10</h3></a>
-							<p>This most powerful Ice Cream Maker in the world</p>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-				</li>
-				<li class="list-group-item">
-					<div class="rows">
-						<div class="col-md-4 content-left">
-							<a href="#"><img src="assets/images/i3.jpg"/></a>
-						</div>
-						<div class="col-md-8 content-right">
-							<a href="#"><h3>Ice Cream Maker Model T3</h3></a>
-							<p>Ice Cream Maker is the best...</p>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-				</li>
-				<li class="list-group-item">
-					<div class="rows">
-						<div class="col-md-4 content-left">
-							<a href="#"><img src="assets/images/i2.jpg"/></a>
-						</div>
-						<div class="col-md-8 content-right">
-							<a href="#"><h3>Ice Cream Maker Model X1</h3></a>
-							<p>This Ice Cream Maker is designed for kid and ...</p>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-				</li>
-				<li class="list-group-item text-center">
+		<div class="panel-footer">
+			<div class="row">
+				<div class="col-md-4">
+					<a href="#"><img src="assets/images/i3.jpg"/></a>
+					<a><h5 class="text-center">Ice Cream Maker Model T5</h5></a>
+					<p>The most beatiful Ice Cream Maker...</p>
+				</div>
+				<div class="col-md-4">
+					<a href="#"><img src="assets/images/i2.jpg"/></a>
+					<a href="#"><h5 class="text-center">Ice Cream Maker Model D7</h5></a>
+					<p>The Ice Cream Maker which...</p>
+				</div>
+				<div class="col-md-4">
+					<a href="#"><img src="assets/images/iceCreamMaker1.webp.jpg"/></a>
+					<a href="#"><h5 class="text-center">Ice Cream Maker Model D7</h5></a>
+					<p>The most powerful Ice Cream Maker...</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<a href="#"><img src="assets/images/b3.jpg"/></a>
+					<a><h5 class="text-center">Ice Cream Maker Model K5</h5></a>
+					<p>The Ice Cream Maker...</p>
+				</div>
+				<div class="col-md-4">
+					<a href="#"><img src="assets/images/b2.jpg"/></a>
+					<a href="#"><h5 class="text-center">Ice Cream Maker Model B7</h5></a>
+					<p>The Ice Cream Maker is designed for ...<p>
+				</div>
+				<div class="col-md-4">
+					<a href="#"><img src="assets/images/iceCreamMaker2.webp.jpg"/></a>
+					<a href="#"><h5 class="text-center">Ice Cream Maker Model L7</h5></a>
+					<p>Whatever</p>
+				</div>
+			</div>
+						<div class="row">
+				<div class="col-md-4">
+					<a href="#"><img src="assets/images/i3.jpg"/></a>
+					<a><h5 class="text-center">Ice Cream Maker Model T5</h5></a>
+					<p>The most beatiful Ice Cream Maker...</p>
+				</div>
+				<div class="col-md-4">
+					<a href="#"><img src="assets/images/i2.jpg"/></a>
+					<a href="#"><h5 class="text-center">Ice Cream Maker Model D7</h5></a>
+					<p>The Ice Cream Maker which...</p>
+				</div>
+				<div class="col-md-4">
+					<a href="#"><img src="assets/images/iceCreamMaker1.webp.jpg"/></a>
+					<a href="#"><h5 class="text-center">Ice Cream Maker Model D7</h5></a>
+					<p>The most powerful Ice Cream Maker...</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<a href="#"><img src="assets/images/b3.jpg"/></a>
+					<a><h5 class="text-center">Ice Cream Maker Model K5</h5></a>
+					<p>The Ice Cream Maker...</p>
+				</div>
+				<div class="col-md-4">
+					<a href="#"><img src="assets/images/b2.jpg"/></a>
+					<a href="#"><h5 class="text-center">Ice Cream Maker Model B7</h5></a>
+					<p>The Ice Cream Maker is designed for ...<p>
+				</div>
+				<div class="col-md-4">
+					<a href="#"><img src="assets/images/iceCreamMaker2.webp.jpg"/></a>
+					<a href="#"><h5 class="text-center">Ice Cream Maker Model L7</h5></a>
+					<p>Whatever</p>
+				</div>
+			</div>
+			<div class="text-center">
 					<ul class="pagination">
 						<li>
 						  <a href="#" aria-label="Previous">
@@ -274,8 +282,9 @@
 						  </a>
 						</li>
 					  </ul>
-				</li>
-			</ul>
+			</div>
+		</div>	
+			
 		</div>
 	</div>
 	<div class="col-md-3" id="sidebar">
