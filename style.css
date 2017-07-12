@@ -13,6 +13,9 @@ body{
 	#contents .content-right{
 		padding-left:30px;
 	}
+	.post_content{
+		padding:20px;line-height:30px;font-size:16px
+	}
 }
 @media (max-width:768px){
 	.navbar{
@@ -25,6 +28,10 @@ body{
 		display:none;
 	}
 	#contents .content-right{
+		padding-left:0px;
+		padding-right:0px;
+	}
+	#post{
 		padding-left:0px;
 		padding-right:0px;
 	}
@@ -93,7 +100,6 @@ body{
 	position:absolute;
 	right:9px;
 	top:9px;
-	float:right;
 }
 #contents .content-left{
 	padding-left:0px;
@@ -119,4 +125,12 @@ body{
 	overflow: hidden;
 	text-overflow:ellipsis;
 	white-space: nowrap;
+}
+#post{
+	padding-left:0px;
+	padding-right:0px;
+}
+.post_date{
+	position:absolute;
+	right:30px;
 }
